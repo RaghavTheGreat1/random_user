@@ -13,15 +13,17 @@ class RandomUser extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-
           backgroundColor: Color(0xFF0ec923),
           title: Center(
             child: Text(
               'RANDOM USER',
-              style: GoogleFonts.patuaOne(textStyle: TextStyle(fontSize: 25.0,fontWeight: FontWeight.w500),),
+              style: GoogleFonts.patuaOne(
+                textStyle:
+                    TextStyle(fontSize: 25.0, fontWeight: FontWeight.w500),
               ),
             ),
           ),
+        ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -31,23 +33,45 @@ class RandomUser extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                  child: CircleAvatar(
-                    radius:100.0,
-                    backgroundColor: Color(0xFFFF5F5F5),
                     child: CircleAvatar(
-                      radius: 98.0,
-                      backgroundColor: Colors.white,
+                      radius: 100.0,
+                      backgroundColor: Color(0xFFFF5F5F5),
                       child: CircleAvatar(
-                        radius: 90.0,
-                        backgroundColor: Colors.blue,
+                        radius: 98.0,
+                        backgroundColor: Colors.white,
+                        child: CircleAvatar(
+                          radius: 90.0,
+                          backgroundColor: Colors.blue,
+                          backgroundImage: AssetImage('images/images.png')),
+                        ),
                       ),
                     ),
                   ),
-                  ),
-                )]             )
               ],
             ),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                      child: Column(
+                    children: [
+                      Text(
+                        'HERE GOES DATA TYPE',
+                        style: GoogleFonts.openSansCondensed(
+                          textStyle: TextStyle(fontWeight: FontWeight.bold,
+                            fontSize: 20.0,
+                          ),
+                        ),
+                      ),
+                      Text('here goes pulled data', style: GoogleFonts.robotoCondensed(textStyle: TextStyle(fontWeight: FontWeight.w900,fontSize: 35.0)))
+                    ],
+                  )),
+                )
+              ],
+            )
+          ],
         ),
-        );
+      ),
+    );
   }
 }
