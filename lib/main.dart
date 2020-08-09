@@ -1,20 +1,11 @@
-import 'dart:ui';
-
-import 'package:random_user/loading_screen.dart';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'loading_screen.dart';
 
-
-void main() => runApp(RandomUser());
-
-class RandomUser extends StatefulWidget {
-  @override
-  _RandomUserState createState() => _RandomUserState();
+void main() {
+  runApp(MyApp());
 }
 
-class _RandomUserState extends State<RandomUser> {
-  Color selectedColour = Colors.black;
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

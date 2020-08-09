@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+import 'dart:async';
 import 'package:http/http.dart' as http;
 
 String name;
@@ -9,7 +9,6 @@ String number;
 String password;
 String location;
 String dob;
-
 
 class RandomUserData {
   Future<void> fetchData() async {
