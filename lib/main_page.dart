@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'icons.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import 'data.dart';
-
-class MainPage extends StatefulWidget {
+  class MainPage extends StatefulWidget {
 
   @override
   _MainPageState createState() => _MainPageState();
@@ -56,106 +55,11 @@ class _MainPageState extends State<MainPage> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                        child: Column(
-                      children: [
-                        Text(
-                          '$dataType',
-                          style: GoogleFonts.openSansCondensed(
-                            textStyle: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20.0,
-                            ),
-                          ),
-                        ),
-                        Text('$dataToBeShown',
-                            style: GoogleFonts.robotoCondensed(
-                                textStyle: TextStyle(
-                                    fontWeight: FontWeight.w900,
-                                    fontSize: 35.0)))
-                      ],
-                    )),
-                  )
-                ],
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 20.0,
-            width: double.infinity,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              AllAboutIcons(
-                iconType: Icons.account_circle,
-                onPress: () {
-                  setState(() {
-                    dataType = 'My name is';
-                    dataToBeShown = name;
-                  });
-                },
-              ),
-              AllAboutIcons(
-                  iconType: Icons.mail,
-                  onPress: () {
-                    setState(() {
-                      dataType = 'My email is';
-                      dataToBeShown = mail;
-                    });
-                  }),
-              AllAboutIcons(
-                iconType: Icons.calendar_today,
-                onPress: () {
-                  setState(() {
-                    dataType = 'My Date of Birth is';
-                    dataToBeShown = dob;
-                  });
-                },
-              )
-            ],
-          ),
-          SizedBox(height: 5.0, width: double.infinity),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              AllAboutIcons(
-//
-                iconType: Icons.location_city,
-                onPress: () {
-                  setState(() {
-                    dataType = 'I live in';
-                    dataToBeShown = location;
-                  });
-                },
-              ),
-              AllAboutIcons(
-
-                iconType: Icons.phone,
-                  onPress: () {
-                    setState(() {
-                      dataType='My Phone is';
-                      dataToBeShown=number;
-                    });
-                  },
-              ),
-              AllAboutIcons(
-
-                iconType: Icons.lock,
-                  onPress: () {
-                setState(() {
-                  dataType='My Password is';
-                  dataToBeShown= password;
-                });
-              },
-              )
-            ],
-          )
+              Row()
         ],
       ),
+    ],
+    ),
     );
   }
 }

@@ -31,7 +31,6 @@ dependencies:
   cupertino_icons: ^0.1.3
   http:
   flutter_spinkit:
-  connectivity: ^0.4.9
   data_connection_checker: ^0.3.4
 dev_dependencies:
   flutter_test:
