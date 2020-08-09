@@ -94,31 +94,31 @@ class _RandomUserState extends State<RandomUser> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 AllAboutIcons(
-                  colour: selectedColour,
+
                   iconType: Icons.account_circle,
-                  onPress: () {
-                    setState(() {
-                      selectedColour = Colors.green;
-                    });
-                  },
+//                  onPress: () {
+//                    setState(() {
+//                      selectedColour = Colors.green;
+//                    });
+//                  },
                 ),
                 AllAboutIcons(
-                  colour: selectedColour,
+//                  colour: selectedColour,
                   iconType: Icons.mail,
-                  onPress: () {
-                    setState(() {
-                      selectedColour = Colors.green;
-                    });
-                  },
+//                  onPress: () {
+//                    setState(() {
+//                      selectedColour = Colors.green;
+//                    });
+////                  },
                 ),
                 AllAboutIcons(
-                  colour: selectedColour,
+//                  colour: selectedColour,
                   iconType: Icons.calendar_today,
-                  onPress: () {
-                    setState(() {
-                      selectedColour = Colors.green;
-                    });
-                  },
+//                  onPress: () {
+//                    setState(() {
+//                      selectedColour = Colors.green;
+//                    });
+//                  },
                 )
               ],
             ),
@@ -127,31 +127,31 @@ class _RandomUserState extends State<RandomUser> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 AllAboutIcons(
-                  colour: selectedColour,
+//                  colour: selectedColour,
                   iconType: Icons.location_city,
-                  onPress: () {
-                    setState(() {
-                      selectedColour = Colors.green;
-                    });
-                  },
+//                  onPress: () {
+//                    setState(() {
+//                      selectedColour = Colors.green;
+//                    });
+//                  },
                 ),
                 AllAboutIcons(
-                  colour: selectedColour,
+//                  colour: selectedColour,
                   iconType: Icons.phone,
-                  onPress: () {
-                    setState(() {
-                      selectedColour = Colors.green;
-                    });
-                  },
+//                  onPress: () {
+//                    setState(() {
+//                      selectedColour = Colors.green;
+//                    });
+//                  },
                 ),
                 AllAboutIcons(
-                  colour: selectedColour,
+//                  colour: selectedColour,
                   iconType: Icons.lock,
-                  onPress: () {
-                    setState(() {
-                      selectedColour = Colors.green;
-                    });
-                  },
+//                  onPress: () {
+//                    setState(() {
+//                      selectedColour = Colors.green;
+//                    });
+//                  },
                 )
               ],
             )
