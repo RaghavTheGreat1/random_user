@@ -19,6 +19,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    checkConnection();
     if (result == false) {
       Navigator.push(context, MaterialPageRoute(builder: (context) {
         return ConnectionError();

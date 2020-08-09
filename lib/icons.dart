@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class AllAboutIcons extends StatelessWidget {
   AllAboutIcons({@required this.iconType, this.onPress});
   final IconData iconType;
-
   final onPress;
+
   @override
   Widget build(BuildContext context) {
     return Padding(

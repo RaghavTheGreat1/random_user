@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'LoadingScreen.dart';
+import 'loading_screen.dart';
 
 class ConnectionError extends StatelessWidget {
   @override

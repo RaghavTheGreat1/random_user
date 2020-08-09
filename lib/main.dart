@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:random_user/LoadingScreen.dart';
+import 'package:random_user/loading_screen.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
