@@ -16,7 +16,7 @@ class AllAboutIcons extends StatelessWidget {
           ),
           disabledColor: Colors.black,
           color: Colors.green,
-          onPressed: (){print("pressed");},
+          onPressed: onPress,
           iconSize: 55.0,
         ),
       ),
